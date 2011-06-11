@@ -4,19 +4,19 @@ El tema por defecto del nuevo Wordpress 3.2 supercargado con HTML5 Boilerplate, 
 malla y Compass para la edición de CSS, todos los estilos originales del tema se encuentran en la carpeta src/wordpress 
 y se han incluidos en el archivo src/style.scss.
 
-Inicia Compass para que compile tus cambios conforme los haces
+Inicia Compass para que compile los cambios en tus estilos
 
     compass watch
     
-Ya que termines tu tema, preparalo para su publicación (limpia elementos de desarrollo, comprime y minifica los css,
-js y html del tema)
+Ya que termines tu tema, preparalo para su publicación (limpia elementos de desarrollo, comprime y reduce el tamaño 
+de los archivo css,js y html del tema)
 
     build/ant
 
-Comentarios y solicitudes de pulls son bienvenidos
+Los comentarios y solicitudes de pulls son bienvenidos.
 
- English EN
-===========
+ English (en)
+=============
 The Default theme for Wordpress 3.2 now using the last version of HTML5 Boilerplate and Blueprint CSS for grid 
 based layout and Compass, all the Wordpress styles now are partial files in src/wordpress and are included 
 in src/style.scss.
@@ -41,6 +41,6 @@ Gracias por todo su trabajo duro
 
 Contactame / Contact
 ====================
-Luis Abarca [@luisabarca] 
-Blog: (http://www.luisabarca.com)  
-Trabajo / Work: (http://www.justoalblanco.com)
+Luis Abarca [http://twitter.com/luisabarca] 
+- Blog: (http://www.luisabarca.com)  
+- Trabajo / Work: (http://www.justoalblanco.com)
