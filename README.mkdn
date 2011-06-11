@@ -1,5 +1,5 @@
- Español (es_MX)
-==================
+TwentyEleven BP (es_MX)
+=======================
 El tema por defecto del nuevo Wordpress 3.2 supercargado con HTML5 Boilerplate, Blueprint CSS para el diseño basado en
 malla y Compass para la edición de CSS, todos los estilos originales del tema se encuentran en la carpeta src/wordpress 
 y se han incluidos en el archivo src/style.scss.
@@ -15,8 +15,8 @@ de los archivo css,js y html del tema)
 
 Los comentarios y solicitudes de pulls son bienvenidos.
 
- English (en)
-=============
+TwentyEleven BP
+===============
 The Default theme for Wordpress 3.2 now using the last version of HTML5 Boilerplate and Blueprint CSS for grid 
 based layout and Compass, all the Wordpress styles now are partial files in src/wordpress and are included 
 in src/style.scss.
