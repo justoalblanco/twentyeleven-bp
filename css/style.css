@@ -1,0 +1,4461 @@
+/* 
+@import "compass/reset"; 
+@import "partials/fonts";
+*/
+/* Put all your helpers classes here */
+/* line 2, ../src/partials/_helpers.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 3, ../src/partials/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 4, ../src/partials/_helpers.scss */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 5, ../src/partials/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 7, ../src/partials/_helpers.scss */
+.group:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 8, ../src/partials/_helpers.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 9, ../src/partials/_helpers.scss */
+.group {
+  zoom: 1;
+}
+
+/* --------------------------------------------------------------
+
+   grid.css
+   * Sets up an easy-to-use grid of 24 columns.
+
+   By default, the grid is 950px wide, with 24 columns
+   spanning 30px, and a 10px margin between columns.
+
+   If you need fewer or more columns, namespaces or semantic
+   element names, use the compressor script (lib/compress.rb)
+
+-------------------------------------------------------------- */
+/* A container should group all your columns. */
+/* line 15, ../src/partials/_grid.scss */
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+/* line 21, ../src/partials/_grid.scss */
+.showgrid {
+  background: url(src/grid.png);
+}
+
+/* Columns
+-------------------------------------------------------------- */
+/* Sets up basic grid floating and margin. */
+/* line 30, ../src/partials/_grid.scss */
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+  float: left;
+  margin-right: 10px;
+}
+
+/* The last column in a row needs this class. */
+/* line 36, ../src/partials/_grid.scss */
+.last {
+  margin-right: 0;
+}
+
+/* Use these classes to set the width of a column. */
+/* line 39, ../src/partials/_grid.scss */
+.span-1 {
+  width: 30px;
+}
+
+/* line 41, ../src/partials/_grid.scss */
+.span-2 {
+  width: 70px;
+}
+
+/* line 42, ../src/partials/_grid.scss */
+.span-3 {
+  width: 110px;
+}
+
+/* line 43, ../src/partials/_grid.scss */
+.span-4 {
+  width: 150px;
+}
+
+/* line 44, ../src/partials/_grid.scss */
+.span-5 {
+  width: 190px;
+}
+
+/* line 45, ../src/partials/_grid.scss */
+.span-6 {
+  width: 230px;
+}
+
+/* line 46, ../src/partials/_grid.scss */
+.span-7 {
+  width: 270px;
+}
+
+/* line 47, ../src/partials/_grid.scss */
+.span-8 {
+  width: 310px;
+}
+
+/* line 48, ../src/partials/_grid.scss */
+.span-9 {
+  width: 350px;
+}
+
+/* line 49, ../src/partials/_grid.scss */
+.span-10 {
+  width: 390px;
+}
+
+/* line 50, ../src/partials/_grid.scss */
+.span-11 {
+  width: 430px;
+}
+
+/* line 51, ../src/partials/_grid.scss */
+.span-12 {
+  width: 470px;
+}
+
+/* line 52, ../src/partials/_grid.scss */
+.span-13 {
+  width: 510px;
+}
+
+/* line 53, ../src/partials/_grid.scss */
+.span-14 {
+  width: 550px;
+}
+
+/* line 54, ../src/partials/_grid.scss */
+.span-15 {
+  width: 590px;
+}
+
+/* line 55, ../src/partials/_grid.scss */
+.span-16 {
+  width: 630px;
+}
+
+/* line 56, ../src/partials/_grid.scss */
+.span-17 {
+  width: 670px;
+}
+
+/* line 57, ../src/partials/_grid.scss */
+.span-18 {
+  width: 710px;
+}
+
+/* line 58, ../src/partials/_grid.scss */
+.span-19 {
+  width: 750px;
+}
+
+/* line 59, ../src/partials/_grid.scss */
+.span-20 {
+  width: 790px;
+}
+
+/* line 60, ../src/partials/_grid.scss */
+.span-21 {
+  width: 830px;
+}
+
+/* line 61, ../src/partials/_grid.scss */
+.span-22 {
+  width: 870px;
+}
+
+/* line 62, ../src/partials/_grid.scss */
+.span-23 {
+  width: 910px;
+}
+
+/* line 63, ../src/partials/_grid.scss */
+.span-24 {
+  width: 950px;
+  margin-right: 0;
+}
+
+/* Use these classes to set the width of an input. */
+/* line 66, ../src/partials/_grid.scss */
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 73, ../src/partials/_grid.scss */
+input.span-1, textarea.span-1 {
+  width: 18px;
+}
+
+/* line 74, ../src/partials/_grid.scss */
+input.span-2, textarea.span-2 {
+  width: 58px;
+}
+
+/* line 75, ../src/partials/_grid.scss */
+input.span-3, textarea.span-3 {
+  width: 98px;
+}
+
+/* line 76, ../src/partials/_grid.scss */
+input.span-4, textarea.span-4 {
+  width: 138px;
+}
+
+/* line 77, ../src/partials/_grid.scss */
+input.span-5, textarea.span-5 {
+  width: 178px;
+}
+
+/* line 78, ../src/partials/_grid.scss */
+input.span-6, textarea.span-6 {
+  width: 218px;
+}
+
+/* line 79, ../src/partials/_grid.scss */
+input.span-7, textarea.span-7 {
+  width: 258px;
+}
+
+/* line 80, ../src/partials/_grid.scss */
+input.span-8, textarea.span-8 {
+  width: 298px;
+}
+
+/* line 81, ../src/partials/_grid.scss */
+input.span-9, textarea.span-9 {
+  width: 338px;
+}
+
+/* line 82, ../src/partials/_grid.scss */
+input.span-10, textarea.span-10 {
+  width: 378px;
+}
+
+/* line 83, ../src/partials/_grid.scss */
+input.span-11, textarea.span-11 {
+  width: 418px;
+}
+
+/* line 84, ../src/partials/_grid.scss */
+input.span-12, textarea.span-12 {
+  width: 458px;
+}
+
+/* line 85, ../src/partials/_grid.scss */
+input.span-13, textarea.span-13 {
+  width: 498px;
+}
+
+/* line 86, ../src/partials/_grid.scss */
+input.span-14, textarea.span-14 {
+  width: 538px;
+}
+
+/* line 87, ../src/partials/_grid.scss */
+input.span-15, textarea.span-15 {
+  width: 578px;
+}
+
+/* line 88, ../src/partials/_grid.scss */
+input.span-16, textarea.span-16 {
+  width: 618px;
+}
+
+/* line 89, ../src/partials/_grid.scss */
+input.span-17, textarea.span-17 {
+  width: 658px;
+}
+
+/* line 90, ../src/partials/_grid.scss */
+input.span-18, textarea.span-18 {
+  width: 698px;
+}
+
+/* line 91, ../src/partials/_grid.scss */
+input.span-19, textarea.span-19 {
+  width: 738px;
+}
+
+/* line 92, ../src/partials/_grid.scss */
+input.span-20, textarea.span-20 {
+  width: 778px;
+}
+
+/* line 93, ../src/partials/_grid.scss */
+input.span-21, textarea.span-21 {
+  width: 818px;
+}
+
+/* line 94, ../src/partials/_grid.scss */
+input.span-22, textarea.span-22 {
+  width: 858px;
+}
+
+/* line 95, ../src/partials/_grid.scss */
+input.span-23, textarea.span-23 {
+  width: 898px;
+}
+
+/* line 96, ../src/partials/_grid.scss */
+input.span-24, textarea.span-24 {
+  width: 938px;
+}
+
+/* Add these to a column to append empty cols. */
+/* line 100, ../src/partials/_grid.scss */
+.append-1 {
+  padding-right: 40px;
+}
+
+/* line 101, ../src/partials/_grid.scss */
+.append-2 {
+  padding-right: 80px;
+}
+
+/* line 102, ../src/partials/_grid.scss */
+.append-3 {
+  padding-right: 120px;
+}
+
+/* line 103, ../src/partials/_grid.scss */
+.append-4 {
+  padding-right: 160px;
+}
+
+/* line 104, ../src/partials/_grid.scss */
+.append-5 {
+  padding-right: 200px;
+}
+
+/* line 105, ../src/partials/_grid.scss */
+.append-6 {
+  padding-right: 240px;
+}
+
+/* line 106, ../src/partials/_grid.scss */
+.append-7 {
+  padding-right: 280px;
+}
+
+/* line 107, ../src/partials/_grid.scss */
+.append-8 {
+  padding-right: 320px;
+}
+
+/* line 108, ../src/partials/_grid.scss */
+.append-9 {
+  padding-right: 360px;
+}
+
+/* line 109, ../src/partials/_grid.scss */
+.append-10 {
+  padding-right: 400px;
+}
+
+/* line 110, ../src/partials/_grid.scss */
+.append-11 {
+  padding-right: 440px;
+}
+
+/* line 111, ../src/partials/_grid.scss */
+.append-12 {
+  padding-right: 480px;
+}
+
+/* line 112, ../src/partials/_grid.scss */
+.append-13 {
+  padding-right: 520px;
+}
+
+/* line 113, ../src/partials/_grid.scss */
+.append-14 {
+  padding-right: 560px;
+}
+
+/* line 114, ../src/partials/_grid.scss */
+.append-15 {
+  padding-right: 600px;
+}
+
+/* line 115, ../src/partials/_grid.scss */
+.append-16 {
+  padding-right: 640px;
+}
+
+/* line 116, ../src/partials/_grid.scss */
+.append-17 {
+  padding-right: 680px;
+}
+
+/* line 117, ../src/partials/_grid.scss */
+.append-18 {
+  padding-right: 720px;
+}
+
+/* line 118, ../src/partials/_grid.scss */
+.append-19 {
+  padding-right: 760px;
+}
+
+/* line 119, ../src/partials/_grid.scss */
+.append-20 {
+  padding-right: 800px;
+}
+
+/* line 120, ../src/partials/_grid.scss */
+.append-21 {
+  padding-right: 840px;
+}
+
+/* line 121, ../src/partials/_grid.scss */
+.append-22 {
+  padding-right: 880px;
+}
+
+/* line 122, ../src/partials/_grid.scss */
+.append-23 {
+  padding-right: 920px;
+}
+
+/* Add these to a column to prepend empty cols. */
+/* line 126, ../src/partials/_grid.scss */
+.prepend-1 {
+  padding-left: 40px;
+}
+
+/* line 127, ../src/partials/_grid.scss */
+.prepend-2 {
+  padding-left: 80px;
+}
+
+/* line 128, ../src/partials/_grid.scss */
+.prepend-3 {
+  padding-left: 120px;
+}
+
+/* line 129, ../src/partials/_grid.scss */
+.prepend-4 {
+  padding-left: 160px;
+}
+
+/* line 130, ../src/partials/_grid.scss */
+.prepend-5 {
+  padding-left: 200px;
+}
+
+/* line 131, ../src/partials/_grid.scss */
+.prepend-6 {
+  padding-left: 240px;
+}
+
+/* line 132, ../src/partials/_grid.scss */
+.prepend-7 {
+  padding-left: 280px;
+}
+
+/* line 133, ../src/partials/_grid.scss */
+.prepend-8 {
+  padding-left: 320px;
+}
+
+/* line 134, ../src/partials/_grid.scss */
+.prepend-9 {
+  padding-left: 360px;
+}
+
+/* line 135, ../src/partials/_grid.scss */
+.prepend-10 {
+  padding-left: 400px;
+}
+
+/* line 136, ../src/partials/_grid.scss */
+.prepend-11 {
+  padding-left: 440px;
+}
+
+/* line 137, ../src/partials/_grid.scss */
+.prepend-12 {
+  padding-left: 480px;
+}
+
+/* line 138, ../src/partials/_grid.scss */
+.prepend-13 {
+  padding-left: 520px;
+}
+
+/* line 139, ../src/partials/_grid.scss */
+.prepend-14 {
+  padding-left: 560px;
+}
+
+/* line 140, ../src/partials/_grid.scss */
+.prepend-15 {
+  padding-left: 600px;
+}
+
+/* line 141, ../src/partials/_grid.scss */
+.prepend-16 {
+  padding-left: 640px;
+}
+
+/* line 142, ../src/partials/_grid.scss */
+.prepend-17 {
+  padding-left: 680px;
+}
+
+/* line 143, ../src/partials/_grid.scss */
+.prepend-18 {
+  padding-left: 720px;
+}
+
+/* line 144, ../src/partials/_grid.scss */
+.prepend-19 {
+  padding-left: 760px;
+}
+
+/* line 145, ../src/partials/_grid.scss */
+.prepend-20 {
+  padding-left: 800px;
+}
+
+/* line 146, ../src/partials/_grid.scss */
+.prepend-21 {
+  padding-left: 840px;
+}
+
+/* line 147, ../src/partials/_grid.scss */
+.prepend-22 {
+  padding-left: 880px;
+}
+
+/* line 148, ../src/partials/_grid.scss */
+.prepend-23 {
+  padding-left: 920px;
+}
+
+/* Border on right hand side of a column. */
+/* line 152, ../src/partials/_grid.scss */
+.border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+/* line 159, ../src/partials/_grid.scss */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+/* line 170, ../src/partials/_grid.scss */
+.pull-1 {
+  margin-left: -40px;
+}
+
+/* line 171, ../src/partials/_grid.scss */
+.pull-2 {
+  margin-left: -80px;
+}
+
+/* line 172, ../src/partials/_grid.scss */
+.pull-3 {
+  margin-left: -120px;
+}
+
+/* line 173, ../src/partials/_grid.scss */
+.pull-4 {
+  margin-left: -160px;
+}
+
+/* line 174, ../src/partials/_grid.scss */
+.pull-5 {
+  margin-left: -200px;
+}
+
+/* line 175, ../src/partials/_grid.scss */
+.pull-6 {
+  margin-left: -240px;
+}
+
+/* line 176, ../src/partials/_grid.scss */
+.pull-7 {
+  margin-left: -280px;
+}
+
+/* line 177, ../src/partials/_grid.scss */
+.pull-8 {
+  margin-left: -320px;
+}
+
+/* line 178, ../src/partials/_grid.scss */
+.pull-9 {
+  margin-left: -360px;
+}
+
+/* line 179, ../src/partials/_grid.scss */
+.pull-10 {
+  margin-left: -400px;
+}
+
+/* line 180, ../src/partials/_grid.scss */
+.pull-11 {
+  margin-left: -440px;
+}
+
+/* line 181, ../src/partials/_grid.scss */
+.pull-12 {
+  margin-left: -480px;
+}
+
+/* line 182, ../src/partials/_grid.scss */
+.pull-13 {
+  margin-left: -520px;
+}
+
+/* line 183, ../src/partials/_grid.scss */
+.pull-14 {
+  margin-left: -560px;
+}
+
+/* line 184, ../src/partials/_grid.scss */
+.pull-15 {
+  margin-left: -600px;
+}
+
+/* line 185, ../src/partials/_grid.scss */
+.pull-16 {
+  margin-left: -640px;
+}
+
+/* line 186, ../src/partials/_grid.scss */
+.pull-17 {
+  margin-left: -680px;
+}
+
+/* line 187, ../src/partials/_grid.scss */
+.pull-18 {
+  margin-left: -720px;
+}
+
+/* line 188, ../src/partials/_grid.scss */
+.pull-19 {
+  margin-left: -760px;
+}
+
+/* line 189, ../src/partials/_grid.scss */
+.pull-20 {
+  margin-left: -800px;
+}
+
+/* line 190, ../src/partials/_grid.scss */
+.pull-21 {
+  margin-left: -840px;
+}
+
+/* line 191, ../src/partials/_grid.scss */
+.pull-22 {
+  margin-left: -880px;
+}
+
+/* line 192, ../src/partials/_grid.scss */
+.pull-23 {
+  margin-left: -920px;
+}
+
+/* line 193, ../src/partials/_grid.scss */
+.pull-24 {
+  margin-left: -960px;
+}
+
+/* line 195, ../src/partials/_grid.scss */
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {
+  float: left;
+  position: relative;
+}
+
+/* line 198, ../src/partials/_grid.scss */
+.push-1 {
+  margin: 0 -40px 1.5em 40px;
+}
+
+/* line 199, ../src/partials/_grid.scss */
+.push-2 {
+  margin: 0 -80px 1.5em 80px;
+}
+
+/* line 200, ../src/partials/_grid.scss */
+.push-3 {
+  margin: 0 -120px 1.5em 120px;
+}
+
+/* line 201, ../src/partials/_grid.scss */
+.push-4 {
+  margin: 0 -160px 1.5em 160px;
+}
+
+/* line 202, ../src/partials/_grid.scss */
+.push-5 {
+  margin: 0 -200px 1.5em 200px;
+}
+
+/* line 203, ../src/partials/_grid.scss */
+.push-6 {
+  margin: 0 -240px 1.5em 240px;
+}
+
+/* line 204, ../src/partials/_grid.scss */
+.push-7 {
+  margin: 0 -280px 1.5em 280px;
+}
+
+/* line 205, ../src/partials/_grid.scss */
+.push-8 {
+  margin: 0 -320px 1.5em 320px;
+}
+
+/* line 206, ../src/partials/_grid.scss */
+.push-9 {
+  margin: 0 -360px 1.5em 360px;
+}
+
+/* line 207, ../src/partials/_grid.scss */
+.push-10 {
+  margin: 0 -400px 1.5em 400px;
+}
+
+/* line 208, ../src/partials/_grid.scss */
+.push-11 {
+  margin: 0 -440px 1.5em 440px;
+}
+
+/* line 209, ../src/partials/_grid.scss */
+.push-12 {
+  margin: 0 -480px 1.5em 480px;
+}
+
+/* line 210, ../src/partials/_grid.scss */
+.push-13 {
+  margin: 0 -520px 1.5em 520px;
+}
+
+/* line 211, ../src/partials/_grid.scss */
+.push-14 {
+  margin: 0 -560px 1.5em 560px;
+}
+
+/* line 212, ../src/partials/_grid.scss */
+.push-15 {
+  margin: 0 -600px 1.5em 600px;
+}
+
+/* line 213, ../src/partials/_grid.scss */
+.push-16 {
+  margin: 0 -640px 1.5em 640px;
+}
+
+/* line 214, ../src/partials/_grid.scss */
+.push-17 {
+  margin: 0 -680px 1.5em 680px;
+}
+
+/* line 215, ../src/partials/_grid.scss */
+.push-18 {
+  margin: 0 -720px 1.5em 720px;
+}
+
+/* line 216, ../src/partials/_grid.scss */
+.push-19 {
+  margin: 0 -760px 1.5em 760px;
+}
+
+/* line 217, ../src/partials/_grid.scss */
+.push-20 {
+  margin: 0 -800px 1.5em 800px;
+}
+
+/* line 218, ../src/partials/_grid.scss */
+.push-21 {
+  margin: 0 -840px 1.5em 840px;
+}
+
+/* line 219, ../src/partials/_grid.scss */
+.push-22 {
+  margin: 0 -880px 1.5em 880px;
+}
+
+/* line 220, ../src/partials/_grid.scss */
+.push-23 {
+  margin: 0 -920px 1.5em 920px;
+}
+
+/* line 221, ../src/partials/_grid.scss */
+.push-24 {
+  margin: 0 -960px 1.5em 960px;
+}
+
+/* line 223, ../src/partials/_grid.scss */
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {
+  float: left;
+  position: relative;
+}
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+/* In case you need to add a gutter above/below an element */
+/* line 230, ../src/partials/_grid.scss */
+div.prepend-top, .prepend-top {
+  margin-top: 1.5em;
+}
+
+/* line 233, ../src/partials/_grid.scss */
+div.append-bottom, .append-bottom {
+  margin-bottom: 1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+/* line 238, ../src/partials/_grid.scss */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+/* line 245, ../src/partials/_grid.scss */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.45em;
+  border: none;
+}
+
+/* line 256, ../src/partials/_grid.scss */
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+/* line 267, ../src/partials/_grid.scss */
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* line 275, ../src/partials/_grid.scss */
+.clearfix, .container {
+  display: block;
+}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+/* line 280, ../src/partials/_grid.scss */
+.clear {
+  clear: both;
+}
+
+/* Put all your mixins here */
+/*
+@import "partials/redefine";
+@import "partials/typography";
+*/
+/*
+This partial is only used by compass' blueprint module. If you're not using it, you can safely delete it.
+*/
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+/* line 12, ../src/wordpress/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 23, ../src/wordpress/_reset.scss */
+:focus {
+  /* remember to define focus styles! */
+  outline: 0;
+}
+
+/* line 26, ../src/wordpress/_reset.scss */
+body {
+  background: #fff;
+  line-height: 1;
+}
+
+/* line 30, ../src/wordpress/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../src/wordpress/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 37, ../src/wordpress/_reset.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 42, ../src/wordpress/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 45, ../src/wordpress/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 48, ../src/wordpress/_reset.scss */
+a img {
+  border: 0;
+}
+
+/* line 52, ../src/wordpress/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* =Structure
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_structure.scss */
+body {
+  padding: 0 2em;
+}
+
+/* line 8, ../src/wordpress/_structure.scss */
+#page {
+  margin: 2em auto;
+  max-width: 1000px;
+}
+
+/* line 12, ../src/wordpress/_structure.scss */
+#branding hgroup {
+  margin: 0 7.6%;
+}
+
+/* line 15, ../src/wordpress/_structure.scss */
+#access div {
+  margin: 0 7.6%;
+}
+
+/* line 18, ../src/wordpress/_structure.scss */
+#primary {
+  float: left;
+  margin: 0 -26.4% 0 0;
+  width: 100%;
+}
+
+/* line 23, ../src/wordpress/_structure.scss */
+#content {
+  margin: 0 34% 0 7.6%;
+  width: 58.4%;
+}
+
+/* line 27, ../src/wordpress/_structure.scss */
+#secondary {
+  float: right;
+  margin-right: 7.6%;
+  width: 18.8%;
+}
+
+/* Singular */
+/* line 34, ../src/wordpress/_structure.scss */
+.singular #primary {
+  margin: 0;
+}
+
+/* line 38, ../src/wordpress/_structure.scss */
+.singular #content,
+.sidebar-content.singular #content {
+  margin: 0 7.6%;
+  position: relative;
+  width: auto;
+}
+
+/* line 46, ../src/wordpress/_structure.scss */
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+  margin: 0 auto;
+  width: 68.9%;
+}
+
+/* Attachments */
+/* line 52, ../src/wordpress/_structure.scss */
+.singular .image-attachment .entry-content {
+  margin: 0 auto;
+  width: auto;
+}
+
+/* line 56, ../src/wordpress/_structure.scss */
+.singular .image-attachment .entry-description {
+  margin: 0 auto;
+  width: 68.9%;
+}
+
+/* Showcase */
+/* line 63, ../src/wordpress/_structure.scss */
+.page-template-showcase-php #primary,
+.sidebar-content.page-template-showcase-php #primary {
+  margin: 0;
+}
+
+/* line 67, ../src/wordpress/_structure.scss */
+.page-template-showcase-php #content,
+.sidebar-content.page-template-showcase-php #content {
+  margin: 0 7.6%;
+  width: auto;
+}
+
+/* line 71, ../src/wordpress/_structure.scss */
+.page-template-showcase-php section.recent-posts {
+  float: right;
+  margin: 0 0 0 31%;
+  width: 69%;
+}
+
+/* line 76, ../src/wordpress/_structure.scss */
+.page-template-showcase-php #main .widget-area {
+  float: left;
+  margin: 0 -22.15% 0 0;
+  width: 22.15%;
+}
+
+/* error404 */
+/* line 83, ../src/wordpress/_structure.scss */
+.error404 #primary {
+  float: none;
+  margin: 0;
+}
+
+/* line 87, ../src/wordpress/_structure.scss */
+.error404 #primary #content {
+  margin: 0 7.6%;
+  width: auto;
+}
+
+/* Alignment */
+/* line 93, ../src/wordpress/_structure.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+
+/* line 98, ../src/wordpress/_structure.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+
+/* line 103, ../src/wordpress/_structure.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right Content */
+/* line 111, ../src/wordpress/_structure.scss */
+.sidebar-content #primary {
+  float: right;
+  margin: 0 0 0 -26.4%;
+  width: 100%;
+}
+
+/* line 116, ../src/wordpress/_structure.scss */
+.sidebar-content #content {
+  margin: 0 7.6% 0 34%;
+  width: 58.4%;
+}
+
+/* line 120, ../src/wordpress/_structure.scss */
+.sidebar-content #secondary {
+  float: left;
+  margin-left: 7.6%;
+  margin-right: 0;
+  width: 18.8%;
+}
+
+/* One column */
+/* line 128, ../src/wordpress/_structure.scss */
+.one-column #page {
+  max-width: 690px;
+}
+
+/* line 131, ../src/wordpress/_structure.scss */
+.one-column #content {
+  margin: 0 7.6%;
+  width: auto;
+}
+
+/* line 135, ../src/wordpress/_structure.scss */
+.one-column #nav-below {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.625em;
+}
+
+/* line 139, ../src/wordpress/_structure.scss */
+.one-column #secondary {
+  float: none;
+  margin: 0 7.6%;
+  width: auto;
+}
+
+/* Simplify the showcase template */
+/* line 145, ../src/wordpress/_structure.scss */
+.one-column .page-template-showcase-php section.recent-posts {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 150, ../src/wordpress/_structure.scss */
+.one-column .page-template-showcase-php #main .widget-area {
+  float: none;
+  margin: 0;
+  width: auto;
+}
+
+/* line 155, ../src/wordpress/_structure.scss */
+.one-column .page-template-showcase-php .other-recent-posts {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Simplify the showcase template when small feature */
+/* line 159, ../src/wordpress/_structure.scss */
+.one-column section.featured-post .attachment-small-feature {
+  border: none;
+  display: block;
+  height: auto;
+  max-width: 60%;
+  position: static;
+}
+
+/* line 166, ../src/wordpress/_structure.scss */
+.one-column article.feature-image.small {
+  margin: 0 0 1.625em;
+  padding: 0;
+}
+
+/* line 170, ../src/wordpress/_structure.scss */
+.one-column article.feature-image.small .entry-title {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+/* line 174, ../src/wordpress/_structure.scss */
+.one-column article.feature-image.small .entry-summary {
+  height: 150px;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+}
+
+/* line 180, ../src/wordpress/_structure.scss */
+.one-column article.feature-image.small .entry-summary a {
+  left: -9%;
+}
+
+/* Remove the margin on singular articles */
+/* line 187, ../src/wordpress/_structure.scss */
+.one-column.singular .entry-header,
+.one-column.singular .entry-content,
+.one-column.singular footer.entry-meta,
+.one-column.singular #comments-title {
+  width: 100%;
+}
+
+/* Simplify the pullquotes and pull styles */
+/* line 191, ../src/wordpress/_structure.scss */
+.one-column.singular blockquote.pull {
+  margin: 0 0 1.625em;
+}
+
+/* line 194, ../src/wordpress/_structure.scss */
+.one-column.singular .pull.alignleft {
+  margin: 0 1.625em 0 0;
+}
+
+/* line 197, ../src/wordpress/_structure.scss */
+.one-column.singular .pull.alignright {
+  margin: 0 0 0 1.625em;
+}
+
+/* line 200, ../src/wordpress/_structure.scss */
+.one-column.singular .entry-meta .edit-link a {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+
+/* line 205, ../src/wordpress/_structure.scss */
+.one-column.singular #author-info {
+  margin: 2.2em -8.8% 0px;
+  padding: 20px 8.8%;
+}
+
+/* Make sure we have room for our comment avatars */
+/* line 210, ../src/wordpress/_structure.scss */
+.one-column .commentlist > li.comment {
+  margin-left: 102px;
+  width: auto;
+}
+
+/* Make sure the logo and search form don't collide */
+/* line 215, ../src/wordpress/_structure.scss */
+.one-column #branding #searchform {
+  right: 40px;
+  top: 4em;
+}
+
+/* Talking avatars take up too much room at this size */
+/* line 220, ../src/wordpress/_structure.scss */
+.one-column .commentlist > li.comment {
+  margin-left: 0;
+}
+
+/* line 224, ../src/wordpress/_structure.scss */
+.one-column .commentlist > li.comment .comment-meta,
+.one-column .commentlist > li.comment .comment-content {
+  margin-right: 85px;
+}
+
+/* line 227, ../src/wordpress/_structure.scss */
+.one-column .commentlist .avatar {
+  background: transparent;
+  display: block;
+  padding: 0;
+  top: 1.625em;
+  left: auto;
+  right: 1.625em;
+}
+
+/* line 235, ../src/wordpress/_structure.scss */
+.one-column .commentlist .children .avatar {
+  background: none;
+  padding: 0;
+  position: absolute;
+  top: 2.2em;
+  left: 2.2em;
+}
+
+/* line 242, ../src/wordpress/_structure.scss */
+.one-column #respond {
+  width: auto;
+}
+
+/* =Global
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_global.scss */
+body, input, textarea {
+  color: #373737;
+  font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+/* line 11, ../src/wordpress/_global.scss */
+body {
+  background: #e2e2e2;
+}
+
+/* line 14, ../src/wordpress/_global.scss */
+#page {
+  background: #fff;
+}
+
+/* Headings */
+/* line 19, ../src/wordpress/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 22, ../src/wordpress/_global.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.625em;
+}
+
+/* Text elements */
+/* line 30, ../src/wordpress/_global.scss */
+p {
+  margin-bottom: 1.625em;
+}
+
+/* line 33, ../src/wordpress/_global.scss */
+ul, ol {
+  margin: 0 0 1.625em 2.5em;
+}
+
+/* line 36, ../src/wordpress/_global.scss */
+ul {
+  list-style: square;
+}
+
+/* line 39, ../src/wordpress/_global.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 42, ../src/wordpress/_global.scss */
+ol ol {
+  list-style: upper-alpha;
+}
+
+/* line 45, ../src/wordpress/_global.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+
+/* line 48, ../src/wordpress/_global.scss */
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+/* line 51, ../src/wordpress/_global.scss */
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+/* line 54, ../src/wordpress/_global.scss */
+dl {
+  margin: 0 1.625em;
+}
+
+/* line 57, ../src/wordpress/_global.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 60, ../src/wordpress/_global.scss */
+dd {
+  margin-bottom: 1.625em;
+}
+
+/* line 63, ../src/wordpress/_global.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 66, ../src/wordpress/_global.scss */
+cite, em, i {
+  font-style: italic;
+}
+
+/* line 69, ../src/wordpress/_global.scss */
+blockquote {
+  font-family: Georgia, "Bitstream Charter", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 3em;
+}
+
+/* line 75, ../src/wordpress/_global.scss */
+blockquote em, blockquote i, blockquote cite {
+  font-style: normal;
+}
+
+/* line 78, ../src/wordpress/_global.scss */
+blockquote cite {
+  color: #666;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* line 85, ../src/wordpress/_global.scss */
+pre {
+  background: #f4f4f4;
+  font: 13px "Courier 10 Pitch", Courier, monospace;
+  line-height: 1.5;
+  margin-bottom: 1.625em;
+  overflow: auto;
+  padding: 0.75em 1.625em;
+}
+
+/* line 93, ../src/wordpress/_global.scss */
+code, kbd {
+  font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+/* line 96, ../src/wordpress/_global.scss */
+abbr, acronym, dfn {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 100, ../src/wordpress/_global.scss */
+address {
+  display: block;
+  margin: 0 0 1.625em;
+}
+
+/* line 104, ../src/wordpress/_global.scss */
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 109, ../src/wordpress/_global.scss */
+sup,
+sub {
+  font-size: 10px;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 116, ../src/wordpress/_global.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 119, ../src/wordpress/_global.scss */
+sub {
+  top: .5ex;
+}
+
+/* Forms */
+/* line 126, ../src/wordpress/_global.scss */
+input[type=text],
+input[type=password],
+textarea {
+  background: #fafafa;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  color: #888;
+}
+
+/* line 135, ../src/wordpress/_global.scss */
+input[type=text]:focus,
+textarea:focus {
+  color: #373737;
+}
+
+/* line 138, ../src/wordpress/_global.scss */
+textarea {
+  padding-left: 3px;
+  width: 98%;
+}
+
+/* line 142, ../src/wordpress/_global.scss */
+input[type=text] {
+  padding: 3px;
+}
+
+/* line 145, ../src/wordpress/_global.scss */
+input#s {
+  background: url(../images/search.png) no-repeat 5px 6px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 22px;
+  line-height: 1.2em;
+  padding: 4px 10px 4px 28px;
+}
+
+/* line 154, ../src/wordpress/_global.scss */
+input#searchsubmit {
+  display: none;
+}
+
+/* Links */
+/* line 159, ../src/wordpress/_global.scss */
+a {
+  color: #1982d1;
+  text-decoration: none;
+}
+
+/* line 165, ../src/wordpress/_global.scss */
+a:focus,
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+/* Assistive text */
+/* line 170, ../src/wordpress/_global.scss */
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 176, ../src/wordpress/_global.scss */
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  color: #1982d1;
+  clip: auto !important;
+  font-size: 12px;
+  position: absolute;
+  text-decoration: underline;
+  top: 0;
+  left: 7.6%;
+}
+
+/* =Header
+----------------------------------------------- */
+/* line 4, ../src/wordpress/_header.scss */
+#branding {
+  border-top: 2px solid #bbb;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 10, ../src/wordpress/_header.scss */
+#site-title {
+  margin-right: 270px;
+  padding: 3.65625em 0 0;
+}
+
+/* line 14, ../src/wordpress/_header.scss */
+#site-title a {
+  color: #111;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+/* line 23, ../src/wordpress/_header.scss */
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+  color: #1982d1;
+}
+
+/* line 26, ../src/wordpress/_header.scss */
+#site-description {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin: 0 270px 3.65625em 0;
+}
+
+/* line 31, ../src/wordpress/_header.scss */
+#branding img {
+  height: auto;
+  margin-bottom: -7px;
+  width: 100%;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+/* line 5, ../src/wordpress/_menu.scss */
+#access {
+  background: #222;
+  /* Show a solid color for older browsers */
+  background: -moz-linear-gradient(#252525, #0a0a0a);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a));
+  /* older webkit syntax */
+  background: -webkit-linear-gradient(#252525, #0a0a0a);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  clear: both;
+  display: block;
+  float: left;
+  margin: 0 auto 6px;
+  width: 100%;
+}
+
+/* line 19, ../src/wordpress/_menu.scss */
+#access ul {
+  font-size: 13px;
+  list-style: none;
+  margin: 0 0 0 -0.813em;
+  padding-left: 0;
+}
+
+/* line 25, ../src/wordpress/_menu.scss */
+#access li {
+  float: left;
+  position: relative;
+}
+
+/* line 29, ../src/wordpress/_menu.scss */
+#access a {
+  color: #eee;
+  display: block;
+  line-height: 3.333em;
+  padding: 0 1.2125em;
+  text-decoration: none;
+}
+
+/* line 36, ../src/wordpress/_menu.scss */
+#access ul ul {
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 3.333em;
+  left: 0;
+  width: 188px;
+  z-index: 99999;
+}
+
+/* line 49, ../src/wordpress/_menu.scss */
+#access ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* line 53, ../src/wordpress/_menu.scss */
+#access ul ul a {
+  background: #f9f9f9;
+  border-bottom: 1px dotted #ddd;
+  color: #444;
+  font-size: 13px;
+  font-weight: normal;
+  height: auto;
+  line-height: 1.4em;
+  padding: 10px 10px;
+  width: 168px;
+}
+
+/* line 66, ../src/wordpress/_menu.scss */
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+  background: #efefef;
+}
+
+/* line 70, ../src/wordpress/_menu.scss */
+#access li:hover > a,
+#access a:focus {
+  background: #f9f9f9;
+  /* Show a solid color for older browsers */
+  background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5));
+  /* Older webkit syntax */
+  background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+  color: #373737;
+}
+
+/* line 77, ../src/wordpress/_menu.scss */
+#access ul li:hover > ul {
+  display: block;
+}
+
+/* line 80, ../src/wordpress/_menu.scss */
+#access .current_page_item a {
+  font-weight: bold;
+}
+
+/* Search Form */
+/* line 85, ../src/wordpress/_menu.scss */
+#branding #searchform {
+  position: absolute;
+  top: 3.8em;
+  right: 7.6%;
+  text-align: right;
+}
+
+/* line 91, ../src/wordpress/_menu.scss */
+#branding #searchform div {
+  margin: 0;
+}
+
+/* line 94, ../src/wordpress/_menu.scss */
+#branding #s {
+  float: right;
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-property: width, background;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: 400ms;
+  -moz-transition-property: width, background;
+  -moz-transition-timing-function: ease;
+  width: 45px;
+}
+
+/* line 104, ../src/wordpress/_menu.scss */
+#branding #s:focus {
+  background-color: #f9f9f9;
+  width: 196px;
+}
+
+/* line 108, ../src/wordpress/_menu.scss */
+#branding #searchsubmit {
+  display: none;
+}
+
+/* line 111, ../src/wordpress/_menu.scss */
+#branding .only-search #searchform {
+  top: 5px;
+  z-index: 1;
+}
+
+/* line 115, ../src/wordpress/_menu.scss */
+#branding .only-search #s {
+  background-color: #666;
+  border-color: #000;
+  color: #222;
+}
+
+/* line 121, ../src/wordpress/_menu.scss */
+#branding .only-search #s,
+#branding .only-search #s:focus {
+  width: 85%;
+}
+
+/* line 124, ../src/wordpress/_menu.scss */
+#branding .only-search #s:focus {
+  background-color: #bbb;
+}
+
+/* line 127, ../src/wordpress/_menu.scss */
+#branding .with-image #searchform {
+  top: auto;
+  bottom: -27px;
+}
+
+/* line 131, ../src/wordpress/_menu.scss */
+#branding .only-search + #access div {
+  padding-right: 160px;
+}
+
+/* =Content
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_content.scss */
+#main {
+  clear: both;
+  padding: 1.625em 0 0;
+}
+
+/* line 9, ../src/wordpress/_content.scss */
+.page-title {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  margin: 0 0 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 18, ../src/wordpress/_content.scss */
+.page-title a {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* line 25, ../src/wordpress/_content.scss */
+.hentry,
+.no-results {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 1.625em;
+  padding: 0 0 1.625em;
+  position: relative;
+}
+
+/* line 32, ../src/wordpress/_content.scss */
+.hentry:last-child,
+.no-results {
+  border-bottom: none;
+}
+
+/* line 35, ../src/wordpress/_content.scss */
+.blog .sticky .entry-header .entry-meta {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+/* line 41, ../src/wordpress/_content.scss */
+.entry-title,
+.entry-header .entry-meta {
+  padding-right: 76px;
+}
+
+/* line 44, ../src/wordpress/_content.scss */
+.entry-title {
+  clear: both;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-bottom: .3em;
+  padding-top: 15px;
+}
+
+/* line 54, ../src/wordpress/_content.scss */
+.entry-title,
+.entry-title a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* line 60, ../src/wordpress/_content.scss */
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+  color: #1982d1;
+}
+
+/* line 63, ../src/wordpress/_content.scss */
+.entry-meta {
+  color: #666;
+  clear: both;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 69, ../src/wordpress/_content.scss */
+.entry-meta a {
+  font-weight: bold;
+}
+
+/* line 72, ../src/wordpress/_content.scss */
+.single-author .entry-meta .by-author {
+  display: none;
+}
+
+/* line 76, ../src/wordpress/_content.scss */
+.entry-content,
+.entry-summary {
+  padding: 1.625em 0 0;
+}
+
+/* line 82, ../src/wordpress/_content.scss */
+.entry-content h1,
+.entry-content h2,
+.comment-content h1,
+.comment-content h2 {
+  color: #000;
+  font-weight: bold;
+  margin: 0 0 .8125em;
+}
+
+/* line 88, ../src/wordpress/_content.scss */
+.entry-content h3,
+.comment-content h3 {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 95, ../src/wordpress/_content.scss */
+.entry-content table,
+.comment-content table {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 1.625em;
+  width: 100%;
+}
+
+/* line 101, ../src/wordpress/_content.scss */
+.entry-content th,
+.comment-content th {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 110, ../src/wordpress/_content.scss */
+.entry-content td,
+.comment-content td {
+  border-top: 1px solid #ddd;
+  padding: 6px 10px 6px 0;
+}
+
+/* line 114, ../src/wordpress/_content.scss */
+.entry-content #s {
+  width: 75%;
+}
+
+/* line 118, ../src/wordpress/_content.scss */
+.comment-content ul,
+.comment-content ol {
+  margin-bottom: 1.625em;
+}
+
+/* line 124, ../src/wordpress/_content.scss */
+.comment-content ul ul,
+.comment-content ol ol,
+.comment-content ul ol,
+.comment-content ol ul {
+  margin-bottom: 0;
+}
+
+/* line 127, ../src/wordpress/_content.scss */
+dl.gallery-item {
+  margin: 0;
+}
+
+/* line 130, ../src/wordpress/_content.scss */
+.page-link {
+  clear: both;
+  display: block;
+  margin: 0 0 1.625em;
+}
+
+/* line 135, ../src/wordpress/_content.scss */
+.page-link a {
+  background: #eee;
+  color: #373737;
+  margin: 0;
+  padding: 2px 3px;
+  text-decoration: none;
+}
+
+/* line 142, ../src/wordpress/_content.scss */
+.page-link a:hover {
+  background: #888;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 147, ../src/wordpress/_content.scss */
+.page-link span {
+  margin-right: 6px;
+}
+
+/* line 150, ../src/wordpress/_content.scss */
+.entry-meta .edit-link a {
+  background: #eee;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #666;
+  float: right;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0px 8px;
+}
+
+/* line 161, ../src/wordpress/_content.scss */
+.entry-meta .edit-link a:hover {
+  background: #888;
+  color: #fff;
+}
+
+/* line 165, ../src/wordpress/_content.scss */
+.entry-content .edit-link {
+  clear: both;
+  display: block;
+}
+
+/* Images */
+/* line 173, ../src/wordpress/_content.scss */
+.entry-content img,
+.comment-content img,
+.widget img {
+  max-width: 97.5%;
+}
+
+/* line 176, ../src/wordpress/_content.scss */
+img[class*="wp-image-"] {
+  height: auto;
+}
+
+/* line 179, ../src/wordpress/_content.scss */
+img.size-full {
+  max-width: 97.5%;
+  width: auto;
+  /* Prevent stretching of full-size images in IE8 */
+}
+
+/* line 183, ../src/wordpress/_content.scss */
+.entry-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 191, ../src/wordpress/_content.scss */
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 1.625em;
+}
+
+/* line 195, ../src/wordpress/_content.scss */
+p img,
+.wp-caption {
+  margin-top: 0.4em;
+}
+
+/* line 198, ../src/wordpress/_content.scss */
+.wp-caption {
+  background: #eee;
+  margin-bottom: 1.625em;
+  max-width: 96%;
+  padding: 9px;
+}
+
+/* line 204, ../src/wordpress/_content.scss */
+.wp-caption img {
+  display: block;
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+/* line 210, ../src/wordpress/_content.scss */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  color: #666;
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+
+/* line 215, ../src/wordpress/_content.scss */
+.wp-caption .wp-caption-text {
+  margin-bottom: 0.6em;
+  padding: 10px 0px 5px 40px;
+  position: relative;
+}
+
+/* line 220, ../src/wordpress/_content.scss */
+.wp-caption .wp-caption-text:before {
+  color: #666;
+  content: '\2014';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 5px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+/* line 231, ../src/wordpress/_content.scss */
+#content .gallery {
+  margin: 0 auto 1.625em;
+}
+
+/* line 234, ../src/wordpress/_content.scss */
+#content .gallery a img {
+  border: none;
+}
+
+/* line 237, ../src/wordpress/_content.scss */
+img#wpstats {
+  display: block;
+  margin: 0 auto 1.625em;
+}
+
+/* line 241, ../src/wordpress/_content.scss */
+#content .gallery-columns-4 .gallery-item {
+  width: 23%;
+  padding-right: 2%;
+}
+
+/* line 245, ../src/wordpress/_content.scss */
+#content .gallery-columns-4 .gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Image borders */
+/* line 252, ../src/wordpress/_content.scss */
+img[class*="wp-image-"],
+#content .gallery .gallery-icon img {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+/* line 256, ../src/wordpress/_content.scss */
+.wp-caption img {
+  border-color: #eee;
+}
+
+/* line 261, ../src/wordpress/_content.scss */
+a:focus img[class*="wp-image-"],
+a:hover img[class*="wp-image-"],
+a:active img[class*="wp-image-"] {
+  background: #eee;
+  border-color: #bbb;
+}
+
+/* line 267, ../src/wordpress/_content.scss */
+.wp-caption a:focus img,
+.wp-caption a:active img,
+.wp-caption a:hover img {
+  background: #fff;
+  border-color: #ddd;
+}
+
+/* Password Protected Posts */
+/* line 273, ../src/wordpress/_content.scss */
+.post-password-required .entry-header .comments-link {
+  margin: 1.625em 0 0;
+}
+
+/* line 276, ../src/wordpress/_content.scss */
+.post-password-required input[type=password] {
+  margin: 0.8125em 0;
+}
+
+/* line 279, ../src/wordpress/_content.scss */
+.post-password-required input[type=password]:focus {
+  background: #f7f7f7;
+}
+
+/* Author Info */
+/* line 284, ../src/wordpress/_content.scss */
+#author-info {
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* line 288, ../src/wordpress/_content.scss */
+.singular #author-info {
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 2.2em -35.6% 0 -35.4%;
+  padding: 20px 35.4%;
+}
+
+/* line 295, ../src/wordpress/_content.scss */
+.archive #author-info {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 2.2em;
+  padding: 0 0 2.2em;
+}
+
+/* line 300, ../src/wordpress/_content.scss */
+#author-avatar {
+  float: left;
+  margin-right: -78px;
+}
+
+/* line 304, ../src/wordpress/_content.scss */
+#author-avatar img {
+  background: #fff;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #bbb;
+  -moz-box-shadow: 0 1px 2px #bbb;
+  box-shadow: 0 1px 2px #bbb;
+  padding: 3px;
+}
+
+/* line 313, ../src/wordpress/_content.scss */
+#author-description {
+  float: left;
+  margin-left: 108px;
+}
+
+/* line 317, ../src/wordpress/_content.scss */
+#author-description h2 {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+/* Comments link */
+/* line 325, ../src/wordpress/_content.scss */
+.entry-header .comments-link a {
+  background: #eeeeee url(../images/comment-bubble.png) no-repeat;
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 36px;
+  overflow: hidden;
+  padding: 0 0 0;
+  position: absolute;
+  top: 1.5em;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 43px;
+  height: 36px;
+}
+
+/* line 343, ../src/wordpress/_content.scss */
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus,
+.entry-header .comments-link a:active {
+  background-color: #1982d1;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 348, ../src/wordpress/_content.scss */
+.entry-header .comments-link .leave-reply {
+  visibility: hidden;
+}
+
+/*
+    Post Formats Headings
+    To hide the headings, display: none the ".entry-header .entry-format" selector,
+    and remove the padding rules below.
+*/
+/* line 357, ../src/wordpress/_content.scss */
+.entry-header .entry-format {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  position: absolute;
+  text-transform: uppercase;
+  top: -5px;
+}
+
+/* line 367, ../src/wordpress/_content.scss */
+.entry-header hgroup .entry-title {
+  padding-top: 15px;
+}
+
+/* line 372, ../src/wordpress/_content.scss */
+article.format-aside .entry-content,
+article.format-link .entry-content,
+article.format-status .entry-content {
+  padding: 20px 0 0;
+}
+
+/* line 375, ../src/wordpress/_content.scss */
+.recent-posts .entry-header .entry-format {
+  display: none;
+}
+
+/* line 378, ../src/wordpress/_content.scss */
+.recent-posts .entry-header hgroup .entry-title {
+  padding-top: 0;
+}
+
+/* Singular content styles for Posts and Pages */
+/* line 383, ../src/wordpress/_content.scss */
+.singular .hentry {
+  border-bottom: none;
+  padding: 4.875em 0 0;
+  position: relative;
+}
+
+/* line 388, ../src/wordpress/_content.scss */
+.singular.page .hentry {
+  padding: 3.5em 0 0;
+}
+
+/* line 391, ../src/wordpress/_content.scss */
+.singular .entry-title {
+  color: #000;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+/* line 398, ../src/wordpress/_content.scss */
+.singular .entry-title,
+.singular .entry-header .entry-meta {
+  padding-right: 0;
+}
+
+/* line 401, ../src/wordpress/_content.scss */
+.singular .entry-header .entry-meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 406, ../src/wordpress/_content.scss */
+blockquote.pull {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.6125em;
+  margin: 0 0 1.625em;
+  text-align: center;
+}
+
+/* line 413, ../src/wordpress/_content.scss */
+.singular blockquote.pull {
+  margin: 0 -22.25% 1.625em;
+}
+
+/* line 416, ../src/wordpress/_content.scss */
+.pull.alignleft {
+  margin: 0 1.625em 0 0;
+  text-align: right;
+  width: 33%;
+}
+
+/* line 421, ../src/wordpress/_content.scss */
+.singular .pull.alignleft {
+  margin: 0 1.625em 0 -22.25%;
+}
+
+/* line 424, ../src/wordpress/_content.scss */
+.pull.alignright {
+  margin: 0 0 0 1.625em;
+  text-align: left;
+  width: 33%;
+}
+
+/* line 429, ../src/wordpress/_content.scss */
+.singular .pull.alignright {
+  margin: 0 -22.25% 0 1.625em;
+}
+
+/* line 433, ../src/wordpress/_content.scss */
+.singular blockquote.pull.alignleft,
+.singular blockquote.pull.alignright {
+  width: 33%;
+}
+
+/* line 436, ../src/wordpress/_content.scss */
+.singular .entry-meta .edit-link a {
+  bottom: auto;
+  left: 50px;
+  position: absolute;
+  right: auto;
+  top: 80px;
+}
+
+/* =Aside
+----------------------------------------------- */
+/* line 6, ../src/wordpress/_helpers.scss */
+.format-aside .entry-title,
+.format-aside .entry-header .comments-link {
+  display: none;
+}
+
+/* line 9, ../src/wordpress/_helpers.scss */
+.singular .format-aside .entry-title {
+  display: block;
+}
+
+/* line 12, ../src/wordpress/_helpers.scss */
+.format-aside .entry-content {
+  padding: 0;
+}
+
+/* line 15, ../src/wordpress/_helpers.scss */
+.singular .format-aside .entry-content {
+  padding: 1.625em 0 0;
+}
+
+/* =Link
+----------------------------------------------- */
+/* line 24, ../src/wordpress/_helpers.scss */
+.format-link .entry-title,
+.format-link .entry-header .comments-link {
+  display: none;
+}
+
+/* line 27, ../src/wordpress/_helpers.scss */
+.singular .format-link .entry-title {
+  display: block;
+}
+
+/* line 30, ../src/wordpress/_helpers.scss */
+.format-link .entry-content {
+  padding: 0;
+}
+
+/* line 33, ../src/wordpress/_helpers.scss */
+.singular .format-link .entry-content {
+  padding: 1.625em 0 0;
+}
+
+/* =Gallery
+----------------------------------------------- */
+/* line 41, ../src/wordpress/_helpers.scss */
+.format-gallery .gallery-thumb {
+  float: left;
+  display: block;
+  margin: .375em 1.625em 0 0;
+}
+
+/* =Status
+----------------------------------------------- */
+/* line 52, ../src/wordpress/_helpers.scss */
+.format-status .entry-title,
+.format-status .entry-header .comments-link {
+  display: none;
+}
+
+/* line 55, ../src/wordpress/_helpers.scss */
+.singular .format-status .entry-title {
+  display: block;
+}
+
+/* line 58, ../src/wordpress/_helpers.scss */
+.format-status .entry-content {
+  padding: 0;
+}
+
+/* line 61, ../src/wordpress/_helpers.scss */
+.singular .format-status .entry-content {
+  padding: 1.625em 0 0;
+}
+
+/* line 64, ../src/wordpress/_helpers.scss */
+.format-status img.avatar {
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  -moz-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  float: left;
+  margin: 4px 10px 2px 0;
+  padding: 0;
+}
+
+/* =Quote
+----------------------------------------------- */
+/* line 79, ../src/wordpress/_helpers.scss */
+.format-quote blockquote {
+  color: #555;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* =Image
+----------------------------------------------- */
+/* line 89, ../src/wordpress/_helpers.scss */
+.indexed.format-image .entry-header {
+  min-height: 61px;
+  /* Prevent the comment icon from colliding with the image when there is no title */
+}
+
+/* line 92, ../src/wordpress/_helpers.scss */
+.indexed.format-image .entry-content {
+  padding-top: 0.5em;
+}
+
+/* line 96, ../src/wordpress/_helpers.scss */
+.indexed.format-image p,
+.indexed.format-image p img {
+  margin-bottom: 0;
+}
+
+/* line 99, ../src/wordpress/_helpers.scss */
+.indexed.format-image footer.entry-meta {
+  background: #e0e6e8;
+  margin-top: -7px;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+/* line 105, ../src/wordpress/_helpers.scss */
+.indexed.format-image div.entry-meta {
+  display: inline-block;
+  float: left;
+  width: 35%;
+}
+
+/* line 110, ../src/wordpress/_helpers.scss */
+.indexed.format-image div.entry-meta + div.entry-meta {
+  float: none;
+  width: 65%;
+}
+
+/* line 116, ../src/wordpress/_helpers.scss */
+.indexed.format-image .entry-meta span.cat-links,
+.indexed.format-image .entry-meta span.tag-links,
+.indexed.format-image .entry-meta span.comments-link {
+  display: block;
+}
+
+/* line 119, ../src/wordpress/_helpers.scss */
+.indexed.format-image footer.entry-meta a {
+  color: #444;
+}
+
+/* line 122, ../src/wordpress/_helpers.scss */
+#content .indexed.format-image img {
+  border: none;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* line 127, ../src/wordpress/_helpers.scss */
+.indexed.format-image .wp-caption {
+  background: #111;
+  margin-bottom: 0;
+  max-width: 96%;
+  padding: 11px;
+}
+
+/* line 133, ../src/wordpress/_helpers.scss */
+.indexed.format-image .wp-caption .wp-caption-text {
+  color: #ddd;
+}
+
+/* line 136, ../src/wordpress/_helpers.scss */
+.indexed.format-image .wp-caption .wp-caption-text:before {
+  color: #444;
+}
+
+/* line 139, ../src/wordpress/_helpers.scss */
+.indexed.format-image a:hover img {
+  opacity: 0.8;
+}
+
+/* =error404
+----------------------------------------------- */
+/* line 147, ../src/wordpress/_helpers.scss */
+.error404 #main #searchform {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-width: 1px 0;
+  margin: 0 -8.9% 1.625em;
+  overflow: hidden;
+  padding: 1.625em 8.9%;
+}
+
+/* line 155, ../src/wordpress/_helpers.scss */
+.error404 #main #s {
+  width: 95%;
+}
+
+/* line 158, ../src/wordpress/_helpers.scss */
+.error404 #main .widget {
+  clear: none;
+  float: left;
+  margin-right: 3.7%;
+  width: 30.85%;
+}
+
+/* line 164, ../src/wordpress/_helpers.scss */
+.error404 #main .widget_archive {
+  margin-right: 0;
+}
+
+/* line 167, ../src/wordpress/_helpers.scss */
+.error404 #main .widget_tag_cloud {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 172, ../src/wordpress/_helpers.scss */
+.error404 .widgettitle {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* =Showcase
+----------------------------------------------- */
+/* line 183, ../src/wordpress/_helpers.scss */
+h1.showcase-heading {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* Intro */
+/* line 193, ../src/wordpress/_helpers.scss */
+article.intro {
+  background: #f9f9f9;
+  border-bottom: none;
+  margin: -1.855em -8.9% 1.625em;
+  padding: 0 8.9%;
+}
+
+/* line 199, ../src/wordpress/_helpers.scss */
+article.intro .entry-title {
+  display: none;
+}
+
+/* line 202, ../src/wordpress/_helpers.scss */
+article.intro .entry-content {
+  color: #111;
+  font-size: 16px;
+  padding: 1.625em 0px 0.625em;
+}
+
+/* line 207, ../src/wordpress/_helpers.scss */
+article.intro .edit-link a {
+  background: #aaa;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  text-decoration: none;
+}
+
+/* line 221, ../src/wordpress/_helpers.scss */
+article.intro .edit-link a:hover,
+article.intro .edit-link a:focus,
+article.intro .edit-link a:active {
+  background: #777;
+}
+
+/* Featured post */
+/* line 226, ../src/wordpress/_helpers.scss */
+section.featured-post {
+  float: left;
+  margin: -1.625em -8.9% 1.625em;
+  padding: 1.625em 8.9% 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 233, ../src/wordpress/_helpers.scss */
+section.featured-post .hentry {
+  border: none;
+  color: #666;
+  margin: 0;
+}
+
+/* line 238, ../src/wordpress/_helpers.scss */
+section.featured-post .entry-meta {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+/* Small featured post */
+/* line 245, ../src/wordpress/_helpers.scss */
+section.featured-post .attachment-small-feature {
+  float: right;
+  height: auto;
+  margin: 0 -8.9% 1.625em 0;
+  max-width: 59%;
+  position: relative;
+  right: -15px;
+}
+
+/* line 253, ../src/wordpress/_helpers.scss */
+section.featured-post.small {
+  padding-top: 0;
+}
+
+/* line 258, ../src/wordpress/_helpers.scss */
+section.featured-post .attachment-small-feature:hover,
+section.featured-post .attachment-small-feature:focus,
+section.featured-post .attachment-small-feature:active {
+  opacity: .8;
+}
+
+/* line 261, ../src/wordpress/_helpers.scss */
+article.feature-image.small {
+  float: left;
+  margin: 0 0 1.625em;
+  width: 45%;
+}
+
+/* line 266, ../src/wordpress/_helpers.scss */
+article.feature-image.small .entry-title {
+  line-height: 1.2em;
+}
+
+/* line 269, ../src/wordpress/_helpers.scss */
+article.feature-image.small .entry-summary {
+  color: #555;
+  font-size: 13px;
+}
+
+/* line 273, ../src/wordpress/_helpers.scss */
+article.feature-image.small .entry-summary p a {
+  background: #222;
+  color: #eee;
+  display: block;
+  left: -23.8%;
+  padding: 9px 26px 9px 85px;
+  position: relative;
+  text-decoration: none;
+  top: 20px;
+  width: 180px;
+  z-index: 1;
+}
+
+/* line 285, ../src/wordpress/_helpers.scss */
+article.feature-image.small .entry-summary p a:hover {
+  background: #1982d1;
+  color: #eee;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Large featured post */
+/* line 292, ../src/wordpress/_helpers.scss */
+section.feature-image.large {
+  border: none;
+  max-height: 288px;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 298, ../src/wordpress/_helpers.scss */
+section.feature-image.large .showcase-heading {
+  display: none;
+}
+
+/* line 301, ../src/wordpress/_helpers.scss */
+section.feature-image.large .hentry {
+  border-bottom: none;
+  left: 9%;
+  margin: 1.625em 9% 0 0;
+  position: absolute;
+  top: 0;
+}
+
+/* line 308, ../src/wordpress/_helpers.scss */
+article.feature-image.large .entry-title a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  padding: .2em 20px;
+}
+
+/* line 319, ../src/wordpress/_helpers.scss */
+section.feature-image.large:hover .entry-title a,
+section.feature-image.large .entry-title:hover a {
+  background: #eee;
+  background: rgba(255, 255, 255, 0.8);
+  color: #222;
+}
+
+/* line 324, ../src/wordpress/_helpers.scss */
+article.feature-image.large .entry-summary {
+  display: none;
+}
+
+/* line 327, ../src/wordpress/_helpers.scss */
+section.feature-image.large img {
+  display: block;
+  height: auto;
+  max-width: 117.9%;
+  padding: 0 0 6px;
+}
+
+/* Featured Slider */
+/* line 335, ../src/wordpress/_helpers.scss */
+.featured-posts {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  height: 328px;
+  margin: 1.625em -8.9% 20px;
+  max-width: 1000px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 345, ../src/wordpress/_helpers.scss */
+.featured-posts .showcase-heading {
+  padding-left: 8.9%;
+}
+
+/* line 348, ../src/wordpress/_helpers.scss */
+.featured-posts section.featured-post {
+  background: #fff;
+  height: 288px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  width: auto;
+}
+
+/* line 357, ../src/wordpress/_helpers.scss */
+.featured-posts section.featured-post.large {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 361, ../src/wordpress/_helpers.scss */
+.featured-posts section.featured-post {
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-property: opacity visibility;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: 200ms;
+  -moz-transition-property: opacity visibility;
+  -moz-transition-timing-function: ease;
+}
+
+/* line 369, ../src/wordpress/_helpers.scss */
+.featured-posts section.featured-post {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 373, ../src/wordpress/_helpers.scss */
+.featured-posts #featured-post-1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 378, ../src/wordpress/_helpers.scss */
+.featured-post .feature-text:after,
+.featured-post .feature-image.small:after {
+  content: ' ';
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* W3C */
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 230px;
+}
+
+/* line 392, ../src/wordpress/_helpers.scss */
+.featured-post .feature-image.small:after {
+  top: 253px;
+}
+
+/* line 395, ../src/wordpress/_helpers.scss */
+#content .feature-slider {
+  top: 5px;
+  right: 8.9%;
+  overflow: visible;
+  position: absolute;
+}
+
+/* line 401, ../src/wordpress/_helpers.scss */
+.feature-slider ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 405, ../src/wordpress/_helpers.scss */
+.feature-slider li {
+  float: left;
+  margin: 0 6px;
+}
+
+/* line 409, ../src/wordpress/_helpers.scss */
+.feature-slider a {
+  background: #3c3c3c;
+  background: rgba(60, 60, 60, 0.9);
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+/* line 421, ../src/wordpress/_helpers.scss */
+.feature-slider a.active {
+  background: #1982d1;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.8);
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* Recent Posts */
+/* line 431, ../src/wordpress/_helpers.scss */
+section.recent-posts {
+  padding: 0 0 1.625em;
+}
+
+/* line 434, ../src/wordpress/_helpers.scss */
+section.recent-posts .hentry {
+  border: none;
+  margin: 0;
+}
+
+/* line 438, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts {
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 443, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts li {
+  padding: 0.3125em 0;
+  position: relative;
+}
+
+/* line 447, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts .entry-title {
+  border-top: 1px solid #ddd;
+  font-size: 17px;
+}
+
+/* line 451, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts a[rel="bookmark"] {
+  color: #373737;
+  float: left;
+  max-width: 84%;
+}
+
+/* line 456, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts a[rel="bookmark"]:after {
+  content: '-';
+  color: transparent;
+  font-size: 11px;
+}
+
+/* line 464, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts .comments-link a,
+section.recent-posts .other-recent-posts .comments-link > span {
+  border-bottom: 2px solid #999;
+  bottom: -2px;
+  color: #444;
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.76333em;
+  padding: 0.3125em 0 0.3125em 1em;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* line 479, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts .comments-link > span {
+  border-color: #bbb;
+  color: #888;
+}
+
+/* line 483, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts .comments-link a:hover {
+  color: #1982d1;
+  border-color: #1982d1;
+}
+
+/* line 487, ../src/wordpress/_helpers.scss */
+section.recent-posts .other-recent-posts li:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* =Attachments
+----------------------------------------------- */
+/* line 499, ../src/wordpress/_helpers.scss */
+.image-attachment div.attachment {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-width: 1px 0;
+  margin: 0 -8.9% 1.625em;
+  overflow: hidden;
+  padding: 1.625em 1.625em 0;
+  text-align: center;
+}
+
+/* line 508, ../src/wordpress/_helpers.scss */
+.image-attachment div.attachment img {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.625em;
+  width: 100%;
+}
+
+/* line 514, ../src/wordpress/_helpers.scss */
+.image-attachment div.attachment a img {
+  border-color: #f9f9f9;
+}
+
+/* line 519, ../src/wordpress/_helpers.scss */
+.image-attachment div.attachment a:focus img,
+.image-attachment div.attachment a:hover img,
+.image-attachment div.attachment a:active img {
+  border-color: #ddd;
+  background: #fff;
+}
+
+/* line 523, ../src/wordpress/_helpers.scss */
+.image-attachment .entry-caption p {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  margin: 0 0 2.6em;
+  text-transform: uppercase;
+}
+
+/* =Navigation
+-------------------------------------------------------------- */
+/* line 535, ../src/wordpress/_helpers.scss */
+#content nav {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 1.625em;
+}
+
+/* line 540, ../src/wordpress/_helpers.scss */
+#content nav a {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.2em;
+}
+
+/* line 545, ../src/wordpress/_helpers.scss */
+#nav-above {
+  padding: 0 0 1.625em;
+}
+
+/* line 548, ../src/wordpress/_helpers.scss */
+#nav-above {
+  display: none;
+}
+
+/* line 551, ../src/wordpress/_helpers.scss */
+.paged #nav-above {
+  display: block;
+}
+
+/* line 554, ../src/wordpress/_helpers.scss */
+.nav-previous {
+  float: left;
+  width: 50%;
+}
+
+/* line 558, ../src/wordpress/_helpers.scss */
+.nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/* Singular navigation */
+/* line 565, ../src/wordpress/_helpers.scss */
+#nav-single {
+  display: inline-block;
+  overflow: visible !important;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  z-index: 1;
+}
+
+/* line 574, ../src/wordpress/_helpers.scss */
+#nav-single .nav-previous,
+#nav-single .nav-next {
+  float: none;
+  width: auto;
+}
+
+/* line 578, ../src/wordpress/_helpers.scss */
+#nav-single .nav-next {
+  padding-left: .5em;
+}
+
+/* =Widgets
+----------------------------------------------- */
+/* line 586, ../src/wordpress/_helpers.scss */
+.widget-area {
+  font-size: 12px;
+}
+
+/* line 589, ../src/wordpress/_helpers.scss */
+.widget {
+  clear: both;
+  margin: 0 0 2.2em;
+}
+
+/* line 593, ../src/wordpress/_helpers.scss */
+.widget-title {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 601, ../src/wordpress/_helpers.scss */
+.widget ul {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* line 605, ../src/wordpress/_helpers.scss */
+.widget ul ul {
+  margin-left: 1.5em;
+}
+
+/* line 608, ../src/wordpress/_helpers.scss */
+.widget ul li {
+  color: #777;
+  font-size: 13px;
+}
+
+/* line 612, ../src/wordpress/_helpers.scss */
+.widget a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 618, ../src/wordpress/_helpers.scss */
+.widget a:hover,
+.widget a:focus,
+.widget a:active {
+  text-decoration: underline;
+}
+
+/* Search Widget */
+/* line 623, ../src/wordpress/_helpers.scss */
+.widget_search form {
+  margin: 0 0 1.625em;
+}
+
+/* line 626, ../src/wordpress/_helpers.scss */
+.widget_search #s {
+  width: 77%;
+}
+
+/* line 629, ../src/wordpress/_helpers.scss */
+.widget_search #searchsubmit {
+  background: #ddd;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+  box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+  color: #888;
+  font-size: 13px;
+  line-height: 25px;
+  position: relative;
+  top: -2px;
+}
+
+/* line 641, ../src/wordpress/_helpers.scss */
+.widget_search #searchsubmit:active {
+  background: #1982d1;
+  border-color: #0861a5;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  color: #bfddf3;
+}
+
+/* Ephemera Widget */
+/* line 652, ../src/wordpress/_helpers.scss */
+section.ephemera ol,
+.widget_twentyeleven_ephemera ol {
+  list-style: square;
+  margin: 5px 0 0;
+}
+
+/* line 656, ../src/wordpress/_helpers.scss */
+.widget_twentyeleven_ephemera .widget-entry-title {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* line 662, ../src/wordpress/_helpers.scss */
+.widget_twentyeleven_ephemera .comments-link a,
+.widget_twentyeleven_ephemera .comments-link > span {
+  color: #666;
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.76333em;
+  text-transform: uppercase;
+}
+
+/* line 673, ../src/wordpress/_helpers.scss */
+section.ephemera .entry-title a span {
+  color: #29628d;
+}
+
+/* Twitter */
+/* line 678, ../src/wordpress/_helpers.scss */
+.widget_twitter li {
+  list-style-type: none;
+  margin-bottom: 14px;
+}
+
+/* line 682, ../src/wordpress/_helpers.scss */
+.widget_twitter .timesince {
+  display: block;
+  font-size: 11px;
+  margin-right: -10px;
+  text-align: right;
+}
+
+/* Widget Image */
+/* line 690, ../src/wordpress/_helpers.scss */
+.widget_image img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Calendar Widget */
+/* line 697, ../src/wordpress/_helpers.scss */
+.widget_calendar #wp-calendar {
+  color: #555;
+  width: 95%;
+  text-align: center;
+}
+
+/* line 704, ../src/wordpress/_helpers.scss */
+.widget_calendar #wp-calendar caption,
+.widget_calendar #wp-calendar td,
+.widget_calendar #wp-calendar th {
+  text-align: center;
+}
+
+/* line 707, ../src/wordpress/_helpers.scss */
+.widget_calendar #wp-calendar caption {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 0 3px 0;
+  text-transform: uppercase;
+}
+
+/* line 713, ../src/wordpress/_helpers.scss */
+.widget_calendar #wp-calendar th {
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+/* line 719, ../src/wordpress/_helpers.scss */
+.widget_calendar #wp-calendar tfoot td {
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* =Comments
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_comments.scss */
+#comments-title {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.6em;
+  padding: 0 0 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 14, ../src/wordpress/_comments.scss */
+.nopassword,
+.nocomments {
+  color: #aaa;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 26px 0;
+  text-align: center;
+}
+
+/* line 21, ../src/wordpress/_comments.scss */
+.commentlist {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 25, ../src/wordpress/_comments.scss */
+.commentlist > li.comment {
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto 1.625em;
+  padding: 1.625em;
+  position: relative;
+  width: 68.9%;
+}
+
+/* line 35, ../src/wordpress/_comments.scss */
+.commentlist .pingback {
+  margin: 0 auto 1.625em;
+  padding: 0 1.625em;
+  width: 68.9%;
+}
+
+/* line 40, ../src/wordpress/_comments.scss */
+.commentlist .children {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 44, ../src/wordpress/_comments.scss */
+.commentlist .children li.comment {
+  background: #fff;
+  border-left: 1px solid #ddd;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  margin: 1.625em 0 0;
+  padding: 1.625em;
+  position: relative;
+}
+
+/* line 53, ../src/wordpress/_comments.scss */
+.commentlist .children li.comment .fn {
+  display: block;
+}
+
+/* line 56, ../src/wordpress/_comments.scss */
+.comment-meta .fn {
+  font-style: normal;
+}
+
+/* line 59, ../src/wordpress/_comments.scss */
+.comment-meta {
+  color: #666;
+  font-size: 12px;
+  line-height: 2.2em;
+}
+
+/* line 64, ../src/wordpress/_comments.scss */
+.commentlist .children li.comment .comment-meta {
+  line-height: 1.625em;
+  margin-left: 50px;
+}
+
+/* line 68, ../src/wordpress/_comments.scss */
+.commentlist .children li.comment .comment-content {
+  margin: 1.625em 0 0;
+}
+
+/* line 71, ../src/wordpress/_comments.scss */
+.comment-meta a {
+  font-weight: bold;
+}
+
+/* line 78, ../src/wordpress/_comments.scss */
+.commentlist .avatar {
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  -moz-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  left: -102px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* line 89, ../src/wordpress/_comments.scss */
+.commentlist > li:before {
+  content: url(../images/comment-arrow.png);
+  left: -21px;
+  position: absolute;
+}
+
+/* line 94, ../src/wordpress/_comments.scss */
+.commentlist > li.pingback:before {
+  content: '';
+}
+
+/* line 97, ../src/wordpress/_comments.scss */
+.commentlist .children .avatar {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  left: 2.2em;
+  padding: 0;
+  top: 2.2em;
+}
+
+/* line 106, ../src/wordpress/_comments.scss */
+a.comment-reply-link {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Post author highlighting */
+/* line 112, ../src/wordpress/_comments.scss */
+.commentlist > li.bypostauthor {
+  background: #ddd;
+  border-color: #d3d3d3;
+}
+
+/* line 116, ../src/wordpress/_comments.scss */
+.commentlist > li.bypostauthor .comment-meta {
+  color: #575757;
+}
+
+/* line 123, ../src/wordpress/_comments.scss */
+.commentlist > li.bypostauthor:before {
+  content: url(../images/comment-arrow-bypostauthor.png);
+}
+
+/* Post Author threaded comments */
+/* line 128, ../src/wordpress/_comments.scss */
+.commentlist .children > li.bypostauthor {
+  background: #ddd;
+  border-color: #d3d3d3;
+}
+
+/* sidebar-page.php comments */
+/* Make sure we have room for our comment avatars */
+/* line 136, ../src/wordpress/_comments.scss */
+.page-template-sidebar-page-php .commentlist > li.comment,
+.page-template-sidebar-page-php.commentlist .pingback {
+  margin-left: 102px;
+  width: auto;
+}
+
+/* And a full-width comment form */
+/* line 141, ../src/wordpress/_comments.scss */
+.page-template-sidebar-page-php #respond {
+  width: auto;
+}
+
+/* Comment Form */
+/* line 146, ../src/wordpress/_comments.scss */
+#respond {
+  background: #ddd;
+  border: 1px solid #d3d3d3;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto 1.625em;
+  padding: 1.625em;
+  position: relative;
+  width: 68.9%;
+}
+
+/* line 157, ../src/wordpress/_comments.scss */
+#respond input[type="text"],
+#respond textarea {
+  background: #fff;
+  border: 4px solid #eee;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  -moz-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  position: relative;
+  padding: 10px;
+  text-indent: 80px;
+}
+
+/* line 172, ../src/wordpress/_comments.scss */
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url,
+#respond .comment-form-comment {
+  position: relative;
+}
+
+/* line 178, ../src/wordpress/_comments.scss */
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+  background: #eee;
+  -webkit-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  color: #555;
+  display: inline-block;
+  font-size: 13px;
+  left: 4px;
+  min-width: 60px;
+  padding: 4px 10px;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+/* line 196, ../src/wordpress/_comments.scss */
+.rtl #respond .comment-form-author label,
+.rtl #respond .comment-form-email label,
+.rtl #respond .comment-form-url label,
+.rtl #respond .comment-form-comment label {
+  -webkit-box-shadow: -1px 2px 2px rgba(204, 204, 204, 0.8);
+  -moz-box-shadow: -1px 2px 2px rgba(204, 204, 204, 0.8);
+  box-shadow: -1px 2px 2px rgba(204, 204, 204, 0.8);
+}
+
+/* line 202, ../src/wordpress/_comments.scss */
+#respond input[type="text"]:focus,
+#respond textarea:focus {
+  text-indent: 0;
+  z-index: 1;
+}
+
+/* line 206, ../src/wordpress/_comments.scss */
+#respond textarea {
+  width: 95%;
+}
+
+/* line 210, ../src/wordpress/_comments.scss */
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+  color: #bd3500;
+  font-size: 22px;
+  font-weight: bold;
+  left: 75%;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+
+/* line 220, ../src/wordpress/_comments.scss */
+#respond .comment-notes,
+#respond .logged-in-as {
+  font-size: 13px;
+}
+
+/* line 223, ../src/wordpress/_comments.scss */
+#respond p {
+  margin: 10px 0;
+}
+
+/* line 226, ../src/wordpress/_comments.scss */
+#respond .form-submit {
+  float: right;
+  margin: -20px 0 10px;
+}
+
+/* line 230, ../src/wordpress/_comments.scss */
+#respond input#submit {
+  background: #222;
+  border: none;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #eee;
+  cursor: pointer;
+  font-size: 15px;
+  left: 30px;
+  margin: 20px 0;
+  padding: 5px 42px 5px 22px;
+  position: relative;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* line 247, ../src/wordpress/_comments.scss */
+#respond input#submit:active {
+  background: #1982d1;
+  color: #bfddf3;
+}
+
+/* line 251, ../src/wordpress/_comments.scss */
+#respond #cancel-comment-reply-link {
+  color: #666;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* line 257, ../src/wordpress/_comments.scss */
+#respond .logged-in-as a:hover,
+#respond #cancel-comment-reply-link:hover {
+  text-decoration: underline;
+}
+
+/* line 260, ../src/wordpress/_comments.scss */
+.commentlist #respond {
+  margin: 1.625em 0 0;
+  width: auto;
+}
+
+/* line 264, ../src/wordpress/_comments.scss */
+#reply-title {
+  color: #373737;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* line 270, ../src/wordpress/_comments.scss */
+#cancel-comment-reply-link {
+  color: #888;
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2.2em;
+  letter-spacing: 0.05em;
+  position: absolute;
+  right: 1.625em;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 1.1em;
+}
+
+/* line 285, ../src/wordpress/_comments.scss */
+#cancel-comment-reply-link:focus,
+#cancel-comment-reply-link:active,
+#cancel-comment-reply-link:hover {
+  color: #ff4b33;
+}
+
+/* line 288, ../src/wordpress/_comments.scss */
+#respond label {
+  line-height: 2.2em;
+}
+
+/* line 291, ../src/wordpress/_comments.scss */
+#respond input[type=text] {
+  display: block;
+  height: 24px;
+  width: 75%;
+}
+
+/* line 296, ../src/wordpress/_comments.scss */
+#respond p {
+  font-size: 12px;
+}
+
+/* line 299, ../src/wordpress/_comments.scss */
+p.comment-form-comment {
+  margin: 0;
+}
+
+/* line 302, ../src/wordpress/_comments.scss */
+.form-allowed-tags {
+  display: none;
+}
+
+/* =Footer
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_footer.scss */
+#colophon {
+  clear: both;
+}
+
+/* line 8, ../src/wordpress/_footer.scss */
+#supplementary {
+  border-top: 1px solid #ddd;
+  padding: 1.625em 7.6%;
+  overflow: hidden;
+}
+
+/* Two Footer Widget Areas */
+/* line 15, ../src/wordpress/_footer.scss */
+#supplementary.two .widget-area {
+  float: left;
+  margin-right: 3.7%;
+  width: 48.1%;
+}
+
+/* line 20, ../src/wordpress/_footer.scss */
+#supplementary.two .widget-area + .widget-area {
+  margin-right: 0;
+}
+
+/* Three Footer Widget Areas */
+/* line 25, ../src/wordpress/_footer.scss */
+#supplementary.three .widget-area {
+  float: left;
+  margin-right: 3.7%;
+  width: 30.85%;
+}
+
+/* line 30, ../src/wordpress/_footer.scss */
+#supplementary.three .widget-area + .widget-area + .widget-area {
+  margin-right: 0;
+}
+
+/* Site Generator Line */
+/* line 35, ../src/wordpress/_footer.scss */
+#site-generator {
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 12px;
+  line-height: 2.2em;
+  padding: 2.2em 0.5em;
+  text-align: center;
+}
+
+/* line 44, ../src/wordpress/_footer.scss */
+#site-generator a {
+  color: #555;
+  font-weight: bold;
+}
+
+/* line 48, ../src/wordpress/_footer.scss */
+#site-generator .sep {
+  background: url(../images/wordpress.png) center left no-repeat;
+  color: transparent;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 7px;
+  width: 16px;
+}
+
+/* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 800px) {
+  /* Simplify the basic layout */
+  /* line 8, ../src/wordpress/_responsive-structure.scss */
+  #main #content {
+    margin: 0 7.6%;
+    width: auto;
+  }
+
+  /* line 12, ../src/wordpress/_responsive-structure.scss */
+  #nav-below {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.625em;
+  }
+
+  /* line 16, ../src/wordpress/_responsive-structure.scss */
+  #main #secondary {
+    float: none;
+    margin: 0 7.6%;
+    width: auto;
+  }
+
+  /* Simplify the showcase template */
+  /* line 22, ../src/wordpress/_responsive-structure.scss */
+  .page-template-showcase-php .featured-posts {
+    min-height: 280px;
+  }
+
+  /* line 25, ../src/wordpress/_responsive-structure.scss */
+  .featured-posts section.featured-post {
+    height: auto;
+  }
+
+  /* line 28, ../src/wordpress/_responsive-structure.scss */
+  .page-template-showcase-php section.recent-posts {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 33, ../src/wordpress/_responsive-structure.scss */
+  .page-template-showcase-php #main .widget-area {
+    float: none;
+    margin: 0;
+    width: auto;
+  }
+
+  /* line 38, ../src/wordpress/_responsive-structure.scss */
+  .page-template-showcase-php .other-recent-posts {
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Simplify the showcase template when small feature */
+  /* line 43, ../src/wordpress/_responsive-structure.scss */
+  section.featured-post .attachment-small-feature,
+  .one-column section.featured-post .attachment-small-feature {
+    border: none;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0.625em auto 1.025em;
+    max-width: 30%;
+    position: static;
+  }
+
+  /* line 52, ../src/wordpress/_responsive-structure.scss */
+  article.feature-image.small {
+    float: right;
+    margin: 0 0 1.625em;
+    width: 64%;
+  }
+
+  /* line 57, ../src/wordpress/_responsive-structure.scss */
+  .one-column article.feature-image.small .entry-summary {
+    height: auto;
+  }
+
+  /* line 60, ../src/wordpress/_responsive-structure.scss */
+  article.feature-image.small .entry-summary p a {
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+  }
+
+  /* Remove the margin on singular articles */
+  /* line 70, ../src/wordpress/_responsive-structure.scss */
+  .singular .entry-header,
+  .singular .entry-content,
+  .singular footer.entry-meta,
+  .singular #comments-title {
+    width: 100%;
+  }
+
+  /* Simplify the pullquotes and pull styles */
+  /* line 74, ../src/wordpress/_responsive-structure.scss */
+  .singular blockquote.pull {
+    margin: 0 0 1.625em;
+  }
+
+  /* line 77, ../src/wordpress/_responsive-structure.scss */
+  .singular .pull.alignleft {
+    margin: 0 1.625em 0 0;
+  }
+
+  /* line 80, ../src/wordpress/_responsive-structure.scss */
+  .singular .pull.alignright {
+    margin: 0 0 0 1.625em;
+  }
+
+  /* line 83, ../src/wordpress/_responsive-structure.scss */
+  .singular .entry-meta .edit-link a {
+    left: 0px;
+    position: absolute;
+    top: 40px;
+  }
+
+  /* line 88, ../src/wordpress/_responsive-structure.scss */
+  .singular #author-info {
+    margin: 2.2em -8.8% 0px;
+    padding: 20px 8.8%;
+  }
+
+  /* Make sure we have room for our comment avatars */
+  /* line 94, ../src/wordpress/_responsive-structure.scss */
+  .commentlist > li.comment,
+  .commentlist .pingback {
+    margin-left: 102px;
+    width: auto;
+  }
+
+  /* And a full-width comment form */
+  /* line 99, ../src/wordpress/_responsive-structure.scss */
+  #respond {
+    width: auto;
+  }
+
+  /* No need to float footer widgets at this size */
+  /* line 103, ../src/wordpress/_responsive-structure.scss */
+  #colophon #supplementary .widget-area {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+
+  /* No need to float 404 widgets at this size */
+  /* line 109, ../src/wordpress/_responsive-structure.scss */
+  .error404 #main .widget {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+
+  /* Make sure embeds fit their containers */
+  /* line 116, ../src/wordpress/_responsive-structure.scss */
+  embed,
+  object {
+    max-width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
+  /* line 122, ../src/wordpress/_responsive-structure.scss */
+  body, input, textarea {
+    font-size: 13px;
+  }
+
+  /* line 125, ../src/wordpress/_responsive-structure.scss */
+  #site-title a {
+    font-size: 24px;
+  }
+
+  /* line 128, ../src/wordpress/_responsive-structure.scss */
+  #site-description {
+    font-size: 12px;
+  }
+
+  /* line 131, ../src/wordpress/_responsive-structure.scss */
+  #access ul {
+    font-size: 12px;
+  }
+
+  /* line 134, ../src/wordpress/_responsive-structure.scss */
+  article.intro .entry-content {
+    font-size: 12px;
+  }
+
+  /* line 137, ../src/wordpress/_responsive-structure.scss */
+  .entry-title {
+    font-size: 21px;
+  }
+
+  /* line 140, ../src/wordpress/_responsive-structure.scss */
+  .featured-post .entry-title {
+    font-size: 14px;
+  }
+
+  /* line 143, ../src/wordpress/_responsive-structure.scss */
+  .singular .entry-title {
+    font-size: 28px;
+  }
+
+  /* line 146, ../src/wordpress/_responsive-structure.scss */
+  .entry-meta {
+    font-size: 12px;
+  }
+
+  /* line 149, ../src/wordpress/_responsive-structure.scss */
+  blockquote {
+    margin: 0;
+  }
+
+  /* line 152, ../src/wordpress/_responsive-structure.scss */
+  blockquote.pull {
+    font-size: 17px;
+  }
+
+  /* Reposition the site title and description slightly */
+  /* line 156, ../src/wordpress/_responsive-structure.scss */
+  #site-title {
+    padding: 5.30625em 0 0;
+  }
+
+  /* line 160, ../src/wordpress/_responsive-structure.scss */
+  #site-title,
+  #site-description {
+    margin-right: 0;
+  }
+
+  /* Make sure the logo and search form don't collide */
+  /* line 164, ../src/wordpress/_responsive-structure.scss */
+  #branding #searchform {
+    top: 1.625em !important;
+  }
+
+  /* Floated content doesn't work well at this size */
+  /* line 169, ../src/wordpress/_responsive-structure.scss */
+  .alignleft,
+  .alignright {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Make sure the post-post navigation doesn't collide with anything */
+  /* line 175, ../src/wordpress/_responsive-structure.scss */
+  #nav-single {
+    display: block;
+    position: static;
+  }
+
+  /* line 179, ../src/wordpress/_responsive-structure.scss */
+  .singular .hentry {
+    padding: 1.625em 0 0;
+  }
+
+  /* line 182, ../src/wordpress/_responsive-structure.scss */
+  .singular.page .hentry {
+    padding: 1.625em 0 0;
+  }
+
+  /* Talking avatars take up too much room at this size */
+  /* line 187, ../src/wordpress/_responsive-structure.scss */
+  .commentlist > li.comment,
+  .commentlist > li.pingback {
+    margin-left: 0 !important;
+  }
+
+  /* line 190, ../src/wordpress/_responsive-structure.scss */
+  .commentlist .avatar {
+    background: transparent;
+    display: block;
+    padding: 0;
+    position: static;
+  }
+
+  /* line 196, ../src/wordpress/_responsive-structure.scss */
+  .commentlist .children .avatar {
+    background: none;
+    left: 2.2em;
+    padding: 0;
+    position: absolute;
+    top: 2.2em;
+  }
+
+  /* Use the available space in the smaller comment form */
+  /* line 204, ../src/wordpress/_responsive-structure.scss */
+  #respond input[type="text"] {
+    width: 95%;
+  }
+
+  /* line 208, ../src/wordpress/_responsive-structure.scss */
+  #respond .comment-form-author .required,
+  #respond .comment-form-email .required {
+    left: 95%;
+  }
+
+  /* line 211, ../src/wordpress/_responsive-structure.scss */
+  #content .gallery-columns-3 .gallery-item {
+    width: 31%;
+    padding-right: 2%;
+  }
+
+  /* line 215, ../src/wordpress/_responsive-structure.scss */
+  #content .gallery-columns-3 .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 450px) {
+  /* line 221, ../src/wordpress/_responsive-structure.scss */
+  #content .gallery-columns-2 .gallery-item {
+    width: 45%;
+    padding-right: 4%;
+  }
+
+  /* line 225, ../src/wordpress/_responsive-structure.scss */
+  #content .gallery-columns-2 .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 231, ../src/wordpress/_responsive-structure.scss */
+  body {
+    padding: 0;
+  }
+
+  /* line 234, ../src/wordpress/_responsive-structure.scss */
+  #page {
+    margin-top: 0;
+  }
+
+  /* line 237, ../src/wordpress/_responsive-structure.scss */
+  #branding {
+    border-top: none;
+  }
+}
+/* =Print
+----------------------------------------------- */
+@media print {
+  /* line 6, ../src/wordpress/_print.scss */
+  body {
+    background: none !important;
+    font-size: 10pt;
+  }
+
+  /* line 11, ../src/wordpress/_print.scss */
+  footer.entry-meta a[rel=bookmark]:link:after,
+  footer.entry-meta a[rel=bookmark]:visited:after {
+    content: " [" attr(href) "] ";
+    /* Show URLs */
+  }
+
+  /* line 14, ../src/wordpress/_print.scss */
+  #page {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    max-width: 100%;
+    position: relative !important;
+  }
+
+  /* line 21, ../src/wordpress/_print.scss */
+  #branding {
+    border-top: none !important;
+    padding: 0;
+  }
+
+  /* line 25, ../src/wordpress/_print.scss */
+  #branding hgroup {
+    margin: 0;
+  }
+
+  /* line 28, ../src/wordpress/_print.scss */
+  #site-title a {
+    font-size: 21pt;
+  }
+
+  /* line 31, ../src/wordpress/_print.scss */
+  #site-description {
+    font-size: 10pt;
+  }
+
+  /* line 34, ../src/wordpress/_print.scss */
+  #branding #searchform {
+    display: none;
+  }
+
+  /* line 37, ../src/wordpress/_print.scss */
+  #branding img {
+    display: none;
+  }
+
+  /* line 40, ../src/wordpress/_print.scss */
+  #access {
+    display: none;
+  }
+
+  /* line 43, ../src/wordpress/_print.scss */
+  #main {
+    border-top: none;
+    box-shadow: none;
+  }
+
+  /* line 47, ../src/wordpress/_print.scss */
+  #primary {
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 52, ../src/wordpress/_print.scss */
+  #content {
+    margin: 0;
+    width: auto;
+  }
+
+  /* line 56, ../src/wordpress/_print.scss */
+  .singular #content {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 60, ../src/wordpress/_print.scss */
+  .singular .entry-header .entry-meta {
+    position: static;
+  }
+
+  /* line 63, ../src/wordpress/_print.scss */
+  .entry-meta .edit-link a {
+    display: none;
+  }
+
+  /* line 66, ../src/wordpress/_print.scss */
+  #content nav {
+    display: none;
+  }
+
+  /* line 72, ../src/wordpress/_print.scss */
+  .singular .entry-header,
+  .singular .entry-content,
+  .singular footer.entry-meta,
+  .singular #comments-title {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 76, ../src/wordpress/_print.scss */
+  .singular .hentry {
+    padding: 0;
+  }
+
+  /* line 80, ../src/wordpress/_print.scss */
+  .entry-title,
+  .singular .entry-title {
+    font-size: 21pt;
+  }
+
+  /* line 83, ../src/wordpress/_print.scss */
+  .entry-meta {
+    font-size: 10pt;
+  }
+
+  /* line 86, ../src/wordpress/_print.scss */
+  .entry-header .comments-link {
+    display: none;
+  }
+
+  /* line 89, ../src/wordpress/_print.scss */
+  .page-link {
+    display: none;
+  }
+
+  /* line 92, ../src/wordpress/_print.scss */
+  .singular #author-info {
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    margin: 2.2em 0 0;
+    padding: 0;
+  }
+
+  /* line 99, ../src/wordpress/_print.scss */
+  #respond {
+    display: none;
+  }
+
+  /* line 102, ../src/wordpress/_print.scss */
+  .widget-area {
+    display: none;
+  }
+
+  /* line 105, ../src/wordpress/_print.scss */
+  #colophon {
+    display: none;
+  }
+
+  /* Comments */
+  /* line 110, ../src/wordpress/_print.scss */
+  .commentlist > li.comment {
+    background: none;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    margin: 0 auto 1.625em;
+    padding: 1.625em;
+    position: relative;
+    width: auto;
+  }
+
+  /* line 120, ../src/wordpress/_print.scss */
+  .commentlist .avatar {
+    height: 39px;
+    left: 2.2em;
+    top: 2.2em;
+    width: 39px;
+  }
+
+  /* line 126, ../src/wordpress/_print.scss */
+  .commentlist li.comment .comment-meta {
+    line-height: 1.625em;
+    margin-left: 50px;
+  }
+
+  /* line 130, ../src/wordpress/_print.scss */
+  .commentlist li.comment .fn {
+    display: block;
+  }
+
+  /* line 133, ../src/wordpress/_print.scss */
+  .commentlist li.comment .comment-content {
+    margin: 1.625em 0 0;
+  }
+
+  /* line 136, ../src/wordpress/_print.scss */
+  .commentlist .comment-edit-link {
+    display: none;
+  }
+
+  /* line 140, ../src/wordpress/_print.scss */
+  .commentlist > li::before,
+  .commentlist > li.bypostauthor::before {
+    content: '';
+  }
+
+  /* line 143, ../src/wordpress/_print.scss */
+  .commentlist .reply {
+    display: none;
+  }
+
+  /* Post author highlighting */
+  /* line 148, ../src/wordpress/_print.scss */
+  .commentlist > li.bypostauthor {
+    color: #444;
+  }
+
+  /* line 151, ../src/wordpress/_print.scss */
+  .commentlist > li.bypostauthor .comment-meta {
+    color: #666;
+  }
+
+  /* line 154, ../src/wordpress/_print.scss */
+  .commentlist > li.bypostauthor:before {
+    content: none;
+  }
+
+  /* Post Author threaded comments */
+  /* line 159, ../src/wordpress/_print.scss */
+  .commentlist .children > li.bypostauthor {
+    background: #fff;
+    border-color: #ddd;
+  }
+
+  /* line 164, ../src/wordpress/_print.scss */
+  .commentlist .children > li.bypostauthor > article,
+  .commentlist .children > li.bypostauthor > article .comment-meta {
+    color: #666;
+  }
+}
+/* =IE7
+----------------------------------------------- */
+/* line 5, ../src/wordpress/_ie7.scss */
+#ie7 article.intro {
+  margin-left: -7.6%;
+  margin-right: -7.6%;
+  padding-left: -7.6%;
+  padding-right: -7.6%;
+  max-width: 1000px;
+}
+
+/* line 12, ../src/wordpress/_ie7.scss */
+#ie7 section.featured-post {
+  margin-left: -7.6%;
+  margin-right: -7.6%;
+  max-width: 850px;
+}
+
+/* line 17, ../src/wordpress/_ie7.scss */
+#ie7 section.recent-posts {
+  margin-right: 7.6%;
+}
+
+/*
+	Individual stylesheets for each developer.
+	If you're using a version control system like github, or svn, this helps avoid mergin errors.
+	You can add more developers in the /src/partials/ directory.
+	If you're working solo, you can just get rid of the next two lines and the two _dev1.scss and _dev2.scss partials
+*/
+/* @import "jab-initializr"; */
+/*  @import "partials/dev1"; */
+/*  @import "partials/dev2"; */
+@media screen and (max-device-width: 480px) {
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+@media print {
+  /* line 63, ../src/style.scss */
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important;
+  }
+
+  /* line 64, ../src/style.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 65, ../src/style.scss */
+  a:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 66, ../src/style.scss */
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 67, ../src/style.scss */
+  .ir a:after {
+    content: "";
+  }
+
+  /* line 68, ../src/style.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 69, ../src/style.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 70, ../src/style.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 72, ../src/style.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 73, ../src/style.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,7 @@
+.*
+.DS_Store
+.svn/
+Thumbs.db
+trash/
+publish/
+build/buildinfo.properties
