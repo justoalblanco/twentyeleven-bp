@@ -71,7 +71,7 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('.showgrid'); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>
